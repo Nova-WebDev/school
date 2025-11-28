@@ -1,0 +1,1 @@
+CONNECTION_DATABASE = "db/school.db"
