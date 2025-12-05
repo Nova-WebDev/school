@@ -1,4 +1,6 @@
-class AreaRepository:
+from data_access.Interface import IRepository
+
+class AreaRepository(IRepository):
     @staticmethod
     def insert(cur, name):
         cur.execute("INSERT INTO area (name) VALUES (?)", (name,))
@@ -24,7 +26,7 @@ class AreaRepository:
         return [dict(row) for row in cur.fetchall()]
 
 
-class SchoolRepository:
+class SchoolRepository(IRepository):
     @staticmethod
     def insert(cur, name, area_id=None):
         cur.execute("INSERT INTO school (name, area_id) VALUES (?, ?)", (name, area_id))
@@ -55,7 +57,7 @@ class SchoolRepository:
         return [dict(row) for row in cur.fetchall()]
 
 
-class ClassroomRepository:
+class ClassroomRepository(IRepository):
     @staticmethod
     def insert(cur, name, school_id=None):
         cur.execute("INSERT INTO classroom (name, school_id) VALUES (?, ?)", (name, school_id))
@@ -86,7 +88,7 @@ class ClassroomRepository:
         return [dict(row) for row in cur.fetchall()]
 
 
-class StudentRepository:
+class StudentRepository(IRepository):
     @staticmethod
     def insert(cur, name, classroom_id=None):
         cur.execute("INSERT INTO student (name, classroom_id) VALUES (?, ?)", (name, classroom_id))
@@ -154,7 +156,7 @@ class GradeRepository:
         return [dict(row) for row in cur.fetchall()]
 
 
-class SubjectRepository:
+class SubjectRepository(IRepository):
     @staticmethod
     def insert(cur, name):
         cur.execute("INSERT INTO subject (name) VALUES (?)", (name,))
