@@ -16,6 +16,7 @@ menu_school_system = """
 
 School Management System 
 
+
 1) Reports
    11) Area
    12) School
