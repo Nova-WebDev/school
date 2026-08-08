@@ -14,8 +14,8 @@ from business.subject.subject_report import subject_report
 
 menu_school_system = """
 
-School Management System 
 
+School Management System 
 
 1) Reports
    11) Area
