@@ -13,7 +13,6 @@ from business.subject.subject_report import subject_report
 
 
 menu_school_system = """
-
 School Management System 
 
 1) Reports
@@ -55,9 +54,7 @@ School Management System
    55) Delete Subject
    56) Delete Grade
 
-
 0) Exit
-
 """
 
 
