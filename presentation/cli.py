@@ -56,11 +56,11 @@ School Management System
    56) Delete Grade
 
 0) Exit
+
 """
 
 
 def cli_loop():
-   
     while True:
         print(menu_school_system)
         choice = input("Select option: ").strip()
