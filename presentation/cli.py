@@ -13,6 +13,7 @@ from business.subject.subject_report import subject_report
 
 
 menu_school_system = """
+
 School Management System 
 
 1) Reports
