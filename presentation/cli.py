@@ -55,6 +55,7 @@ School Management System
    55) Delete Subject
    56) Delete Grade
 
+
 0) Exit
 
 """
