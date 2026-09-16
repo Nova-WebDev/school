@@ -1,5 +1,3 @@
-from presentation.cli import cli_loop
+from presentation.cli import 
 
-
-if __name__ == '__main__':
-    cli_loop()
+cli_loop()
