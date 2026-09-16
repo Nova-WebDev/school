@@ -56,7 +56,6 @@ menu_school_system = """
 
 
 0) Exit
-
 """
 
 
