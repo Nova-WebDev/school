@@ -1,3 +1,3 @@
 from presentation.cli import 
 
-cli_loop()
+cli_loop();
