@@ -1,8 +1,4 @@
 
-def calculate_average(grades: list[float]) -> float | None:
-    return sum(grades) / len(grades) if grades else None
-
-
 def is_student_grade_a(grades: list[float]) -> bool:
     avg = calculate_average(grades)
     return avg is not None and avg >= 18
@@ -19,4 +15,7 @@ def is_student_failed_by_average(grades: list[float]) -> bool:
 
 def is_subject_failed(score: float) -> bool:
     return score < 10
+
+def calculate_average(grades: list[float]) -> float | None:
+    return sum(grades) / len(grades) if grades else None
 
