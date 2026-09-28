@@ -1,1 +1,1 @@
-CONNECTION_DATABASE = "db/db"
+CONNECTION_DATABASE = "school.db/db"
