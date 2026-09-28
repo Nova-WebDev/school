@@ -22,6 +22,8 @@ menu_school_system = """
    14) Student
    15) Subject
 
+
+
 2) View
    21) View Area
    22) View School
