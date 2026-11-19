@@ -8,7 +8,7 @@ class AreaRepository(IRepository):
 
     @staticmethod
     def update(cur, pk, name):
-        cur.execute("UPDATE area SET name = ? WHERE id = ?", (name, pk))
+        cur.execute("UPDATE area SET name = ? WHERE id =  ??", (name, pk))
 
     @staticmethod
     def delete(cur, pk):
