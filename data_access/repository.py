@@ -1,7 +1,7 @@
 from data_access.Interface import IRepository
 
 class AreaRepository(IRepository):
-    @staticmethod
+    @
     def insert(cur, name):
         cur.execute("INSERT INTO area (name) VALUES (?)", (name,))
         return cur.lastrowid
